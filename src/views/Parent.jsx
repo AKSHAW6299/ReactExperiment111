@@ -3,7 +3,7 @@ import axios from 'axios';
 import {
   Search, ShoppingCart, User, Heart, ChevronRight,
   ChevronLeft, Star, Mail, Facebook, Twitter, Instagram, Youtube,
-  Home, Cookie, Sparkles, Lamp, Baby, Activity, // Added these for better relevance
+  Home, Lamp, Baby, // Added these for better relevance
   Utensils,
   Flame,
   HeartPulse,
@@ -12,7 +12,6 @@ import {
 
 const SiazHubComplete = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,7 +21,7 @@ const SiazHubComplete = () => {
       } catch (err) {
         console.error("API Error", err);
       } finally {
-        setLoading(false);
+        console.log('loader here');
       }
     };
     fetchData();
