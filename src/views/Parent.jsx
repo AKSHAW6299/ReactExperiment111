@@ -69,7 +69,7 @@ const SiazHubComplete = () => {
     <div className="min-h-screen bg-white">
       {/* 1. TOP NAV / HEADER (Screenshot 1 & 10) */}
       <header className="border-b bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="max-w-9xl mx-auto px-4 py-6 flex items-center justify-between">
           <div className="flex items-center gap-12">
             <img src="https://siazhub.web.app/images/logo.png" alt="Logo" className="h-8" />
             <div className="hidden lg:flex items-center bg-[#F3F4F6] rounded-lg px-4 py-2 w-[400px]">
@@ -99,7 +99,7 @@ const SiazHubComplete = () => {
       </header>
 
       {/* 2. CIRCULAR CATEGORIES (Screenshot 2) */}
-      <section className="max-w-7xl mx-auto px-4 py-8 flex justify-center gap-8 overflow-x-auto no-scrollbar">
+      <section className="max-w-10xl mx-auto px-4 py-12 mt-8 flex justify-center gap-3 overflow-x-auto no-scrollbar">
         {[
           { name: 'Home & Living', img: 'https://siazhub.web.app/cimg/1.png' },
           { name: 'Grocery', img: 'https://siazhub.web.app/cimg/2.png' },
@@ -109,7 +109,7 @@ const SiazHubComplete = () => {
           { name: 'Baby & Kids', img: 'https://siazhub.web.app/cimg/6.png' }
         ].map((cat, i) => (
           <div key={i} className="flex flex-col items-center group cursor-pointer">
-            <div className="w-20 h-20 rounded-2xl overflow-hidden mb-2 shadow-sm border border-transparent group-hover:border-blue-600 transition-all">
+            <div className="w-28 h-28 rounded-2xl overflow-hidden mb-2 shadow-sm border border-transparent group-hover:border-blue-600 transition-all">
               <img src={cat.img} alt={cat.name} className="w-full h-full object-cover" />
             </div>
             <span className="text-[10px] font-bold text-gray-500 uppercase text-center">{cat.name}</span>
@@ -118,12 +118,18 @@ const SiazHubComplete = () => {
       </section>
 
       {/* 3. HERO BANNER GRID (Screenshot 2 & 10) */}
-      <section className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
-        <div className="lg:col-span-2 bg-[#E3F2F7] rounded-3xl p-12 flex relative overflow-hidden">
+      {/* Parent container modified for 60/40 ratio, inner classes preserved */}
+      <section className="max-w-10xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-[60%_40%] gap-6 mb-12">
+
+        {/* 1st div: Now occupies 60% */}
+        <div className="lg:col-span-1 bg-[#E3F2F7] rounded-3xl p-12 flex relative overflow-hidden">
           <div className="z-10 max-w-sm">
             <span className="text-[#D4AF37] font-serif italic text-2xl">100% Natural</span>
-            <h2 className="text-5xl font-black text-[#222] mt-4 mb-8 leading-[1.1]">Fresh Smoothie & Summer Juice</h2>
-            <button className="border-2 border-gray-800 px-8 py-3 rounded-lg font-bold text-sm hover:bg-black hover:text-white transition uppercase tracking-wider">Shop Now</button>
+            <h3 className="text-5xl font-semibold leading-[1.2] text-[#222] mt-4 mb-4">
+              Fresh Smoothie &amp; Summer Juice
+            </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic at dolorem pariatur eius sit esse!</p>
+            <button className="border-2 border-gray-800 px-8 py-3 mt-6 rounded-lg font-bold text-sm hover:bg-black hover:text-white transition uppercase tracking-wider">Shop Now</button>
           </div>
           <img src="https://siazhub.web.app/images/product-thumb-1.png" className="absolute right-0 bottom-0 h-[90%] object-contain" alt="Juice" />
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
@@ -132,22 +138,25 @@ const SiazHubComplete = () => {
             <div className="w-3 h-3 rounded-full bg-white"></div>
           </div>
         </div>
+
+        {/* 2nd div: Now occupies 40% */}
         <div className="flex flex-col gap-6">
           <div className="bg-[#E9F3E9] rounded-3xl p-8 flex justify-between items-center h-full relative overflow-hidden">
             <div className="z-10">
               <span className="text-3xl font-light">20% Off</span>
-              <p className="text-[10px] font-bold tracking-[4px] my-2 text-gray-400 uppercase">Sale</p>
-              <h3 className="text-2xl font-bold leading-tight">Fruits & <br /> Vegetables</h3>
-              <button className="text-xs font-bold mt-4 flex items-center gap-1 border-b border-black pb-1">Shop Collection <ChevronRight size={12} /></button>
+              <p className="text-[10px] font-bold tracking-[4px] my-2 text-gray-400 uppercase">________ Sale</p>
+              <h3 className="text-2xl font-semibold leading-tight">Fruits & <br /> Vegetables</h3>
+              <button className="text-xs font-semibold mt-4 flex items-center gap-1 border-b border-black pb-1">Shop Collection <ChevronRight size={12} /></button>
             </div>
             <img src="https://siazhub.web.app/images/ad-image-1.png" className="h-32 object-contain" alt="Veg" />
           </div>
+
           <div className="bg-[#F9E9E9] rounded-3xl p-8 flex justify-between items-center h-full relative overflow-hidden">
             <div className="z-10">
               <span className="text-3xl font-light">15% Off</span>
               <p className="text-[10px] font-bold tracking-[4px] my-2 text-gray-400 uppercase">Sale</p>
-              <h3 className="text-2xl font-bold leading-tight">Baked <br /> Products</h3>
-              <button className="text-xs font-bold mt-4 flex items-center gap-1 border-b border-black pb-1">Shop Collection <ChevronRight size={12} /></button>
+              <h3 className="text-2xl font-semibold leading-tight">Baked <br /> Products</h3>
+              <button className="text-xs font-semibold mt-4 flex items-center gap-1 border-b border-black pb-1">Shop Collection <ChevronRight size={12} /></button>
             </div>
             <img src="https://siazhub.web.app/images/ad-image-2.png" className="h-32 object-contain" alt="Bread" />
           </div>
@@ -155,7 +164,7 @@ const SiazHubComplete = () => {
       </section>
 
       {/* 4. CATEGORY TILES & NEW BRANDS (Screenshot 11) */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
+      <section className="max-w-10xl mx-auto px-4 py-8">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-2xl font-bold text-gray-800">Category</h3>
           <div className="flex gap-4 items-center">
@@ -179,7 +188,7 @@ const SiazHubComplete = () => {
       </section>
 
       {/* NEWLY ARRIVED BRANDS SECTION */}
-      <section className="max-w-7xl mx-auto px-4 py-10">
+      <section className="max-w-10xl mx-auto px-4 py-10">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-semibold text-gray-800 tracking-tight">
@@ -236,7 +245,7 @@ const SiazHubComplete = () => {
       </section>
 
       {/* 5. TRENDING PRODUCTS (Screenshot 9) */}
-      <section className="max-w-7xl mx-auto px-4 py-12">
+      <section className="max-w-10xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-2xl font-bold text-gray-800 tracking-tight">Trending Products</h3>
           <div className="flex gap-8 text-[11px] font-bold uppercase tracking-widest text-gray-400">
@@ -253,7 +262,7 @@ const SiazHubComplete = () => {
       </section>
 
       {/* 6. PROMO BANNERS (Screenshot 6) */}
-      <section className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <section className="max-w-10xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-[#F9E9E9] rounded-2xl p-10 flex relative overflow-hidden group">
           <div className="z-10">
             <span className="text-[#D4AF37] italic font-serif text-lg">Upto 25% Off</span>
@@ -276,7 +285,7 @@ const SiazHubComplete = () => {
 
       {/* 7. BEST SELLING PRODUCTS */}
       <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-10xl mx-auto px-4">
 
           {/* Section Header */}
           <div className="flex justify-between items-center mb-10">
@@ -353,7 +362,7 @@ const SiazHubComplete = () => {
       </section>
 
       {/* 8. DISCOUNT FORM (Screenshot 7) */}
-      <section className="max-w-7xl mx-auto px-4 py-20">
+      <section className="max-w-10xl mx-auto px-4 py-20">
         <div
           className="bg-[#E3F2F7] rounded-[40px] p-16 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden"
           style={{
@@ -407,7 +416,7 @@ const SiazHubComplete = () => {
       </section>
 
       {/* 9. REFINED APP PROMOTION SECTION */}
-      <section className="max-w-7xl mx-auto px-4 pt-20 pb-32"> {/* Increased bottom padding for the overlap */}
+      <section className="max-w-10xl mx-auto px-4 pt-20 pb-32"> {/* Increased bottom padding for the overlap */}
         <div className="bg-[#FFF8E7] rounded-[60px] px-8 md:px-20 flex flex-col md:flex-row items-center justify-between relative min-h-[500px]">
 
           {/* Left Side: Mobile Mockup (Exceeding the bottom) */}
@@ -458,7 +467,7 @@ const SiazHubComplete = () => {
 
       {/* 10. FOOTER & TAGS SECTION */}
       <footer className="pt-20 pb-10 border-t bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-10xl mx-auto px-4">
 
           {/* People are also looking for (Tag Cloud) */}
           <div className="mb-20">
