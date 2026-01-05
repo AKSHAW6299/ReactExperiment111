@@ -327,7 +327,7 @@ const SiazHubComplete = () => {
           {/* Section Header */}
           <div className="flex justify-between items-center mb-10">
             <h2 className="text-3xl font-black text-gray-800 tracking-tighter uppercase italic">
-              Best selling products
+              Best selling products (This is dynamic)
             </h2>
             <a href="#" className="text-sm font-semibold text-gray-400 hover:text-green-600 transition-colors">
               View All Products →
@@ -473,7 +473,7 @@ const SiazHubComplete = () => {
       {/* 11. Just arrived PRODUCTS (Screenshot 9) */}
       <section className="max-w-10xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
-          <h3 className="text-4xl font-semibold text-gray-800 tracking-tight">Just Arrived</h3>
+          <h3 className="text-4xl font-semibold text-gray-800 tracking-tight">Just Arrived (This is dynamic)</h3>
           <div className="flex gap-8 text-[11px] font-semibold uppercase tracking-widest text-gray-400">
             <span className="text-yellow-600 border-b-2 border-yellow-600 pb-1">All</span>
             <span className="hover:text-yellow-600 cursor-pointer">Fruits & Veges</span>
