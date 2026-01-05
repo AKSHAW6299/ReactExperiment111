@@ -103,14 +103,14 @@ const SiazHubComplete = () => {
       <header className="border-b bg-white">
         <div className="max-w-9xl mx-auto px-4 py-6 flex items-center justify-between">
           <div className="flex items-center gap-12">
-            <img src="https://siazhub.web.app/images/logo.png" alt="Logo" className="h-8" />
+            <img src="https://siazhub.web.app/images/logo.png" alt="Logo" className="h-10" />
             <div className="hidden lg:flex items-center bg-[#F3F4F6] rounded-lg px-4 py-2 w-[400px]">
-              <span className="text-xs text-gray-400 border-r pr-3 mr-3 whitespace-nowrap cursor-pointer">All Categories</span>
+              <span className="text-md text-gray-400 border-r pr-3 mr-3 whitespace-nowrap cursor-pointer">All Categories</span>
               <input type="text" placeholder="Search for more than 20,000 products" className="bg-transparent text-xs outline-none w-full" />
               <Search size={16} className="text-gray-400" />
             </div>
           </div>
-          <div className="flex items-center gap-6 text-[11px] font-semibold text-gray-600">
+          <div className="flex items-center gap-6 text-md font-semibold text-gray-600">
             <span className="cursor-pointer hover:text-blue-600">Apply for Store Partner</span>
             <div className="flex items-center gap-4">
               <User size={20} className="cursor-pointer" />
@@ -121,8 +121,8 @@ const SiazHubComplete = () => {
                   <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-400">Your Cart</p>
-                  <p className="text-xs font-black text-gray-900">₹00.00</p>
+                  <p className="text-md text-gray-400">Your Cart</p>
+                  <p className="text-md font-black text-gray-900">₹00.00</p>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* NEWLY ARRIVED BRANDS SECTION */}
+      {/* 5. NEWLY ARRIVED BRANDS SECTION */}
       <section className="max-w-10xl mx-auto px-4 py-10">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-8">
@@ -281,7 +281,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 5. TRENDING PRODUCTS (Screenshot 9) */}
+      {/* 6. TRENDING PRODUCTS (Screenshot 9) */}
       <section className="max-w-10xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-4xl font-semibold text-gray-800 tracking-tight">Trending Products</h3>
@@ -298,7 +298,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 6. PROMO BANNERS (Screenshot 6) */}
+      {/* 7. PROMO BANNERS (Screenshot 6) */}
       <section className="max-w-10xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-[#F9E9E9] rounded-2xl p-10 flex relative overflow-hidden group">
           <div className="z-10">
@@ -320,7 +320,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 7. BEST SELLING PRODUCTS */}
+      {/* 8. BEST SELLING PRODUCTS */}
       <section className="py-12 bg-white">
         <div className="max-w-10xl mx-auto px-4">
 
@@ -398,7 +398,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 8. DISCOUNT FORM (Screenshot 7) */}
+      {/* 9. DISCOUNT FORM (Screenshot 7) */}
       <section className="max-w-10xl mx-auto px-4 py-20">
         <div
           className="bg-[#E3F2F7] rounded-[40px] p-32 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden"
@@ -452,11 +452,11 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 5. TRENDING PRODUCTS (Screenshot 9) */}
+      {/* 10. TRENDING PRODUCTS (Screenshot 9) */}
       <section className="max-w-10xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-4xl font-semibold text-gray-800 tracking-tight">Most Popular Products
-             (This is dynamic)</h3>
+            (This is dynamic)</h3>
           <div className="flex gap-8 text-[11px] font-semibold uppercase tracking-widest text-gray-400">
             <span className="text-yellow-600 border-b-2 border-yellow-600 pb-1">All</span>
             <span className="hover:text-yellow-600 cursor-pointer">Fruits & Veges</span>
@@ -470,7 +470,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 5. Just arrived PRODUCTS (Screenshot 9) */}
+      {/* 11. Just arrived PRODUCTS (Screenshot 9) */}
       <section className="max-w-10xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-4xl font-semibold text-gray-800 tracking-tight">Just Arrived</h3>
@@ -487,7 +487,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 2. Our Recent Blog (Matches image_9c95fd.jpg) */}
+      {/* 12. Our Recent Blog (Matches image_9c95fd.jpg) */}
       <section className="max-w-10xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-4xl font-semibold text-gray-800">Our Recent Blog</h3>
@@ -530,7 +530,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 9. REFINED APP PROMOTION SECTION */}
+      {/* 13. REFINED APP PROMOTION SECTION */}
       <section className="max-w-10xl mx-auto px-4 pt-20 pb-32 mt-4"> {/* Increased bottom padding for the overlap */}
         <div className="bg-[#FFF8E7] rounded-[60px] px-8 md:px-20 flex flex-col md:flex-row items-center justify-between relative min-h-[500px]">
 
@@ -576,7 +576,7 @@ const SiazHubComplete = () => {
         </div>
       </section>
 
-      {/* 10. FOOTER & TAGS SECTION */}
+      {/* 14. FOOTER & TAGS SECTION */}
       <footer className="pt-20 pb-10 border-t bg-white">
         <div className="max-w-10xl mx-auto px-4">
 
