@@ -8,6 +8,7 @@ import {
   Flame,
   HeartPulse,
   Calendar, Folder,
+  Link,
 } from 'lucide-react';
 
 const SiazHubComplete = () => {
@@ -328,9 +329,9 @@ const SiazHubComplete = () => {
             <h2 className="text-3xl font-black text-gray-800 tracking-tighter uppercase italic">
               Best selling products (This is dynamic)
             </h2>
-            <a href="#" className="text-sm font-semibold text-gray-400 hover:text-green-600 transition-colors">
+            <Link href="#" className="text-sm font-semibold text-gray-400 hover:text-green-600 transition-colors">
               View All Products →
-            </a>
+            </Link>
           </div>
 
           {/* Product Grid */}
@@ -553,20 +554,20 @@ const SiazHubComplete = () => {
 
             {/* Store Buttons */}
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <a href="#" className="transition-transform hover:scale-105 active:scale-95">
+              <Link href="#" className="transition-transform hover:scale-105 active:scale-95">
                 <img
                   src="https://siazhub.web.app/images/app-store.jpg"
                   alt="App Store"
                   className="h-14 md:h-16 rounded-xl shadow-lg"
                 />
-              </a>
-              <a href="#" className="transition-transform hover:scale-105 active:scale-95">
+              </Link>
+              <Link href="#" className="transition-transform hover:scale-105 active:scale-95">
                 <img
                   src="https://siazhub.web.app/images/google-play.jpg"
                   alt="Google Play"
                   className="h-14 md:h-16 rounded-xl shadow-lg"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
