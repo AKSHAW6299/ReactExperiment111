@@ -2,7 +2,7 @@ import React from 'react'
 
 function Parent() {
   return (
-    <div>Parent</div>
+    <div>Parents</div>
   )
 }
 
